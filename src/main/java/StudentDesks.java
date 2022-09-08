@@ -16,10 +16,9 @@ class StudentDesks {
          */
         int totalStud = a + b + c;
         int deskMod = totalStud % 2;
-        int deskDiv = totalStud / 2;
-        int totalDesk = deskDiv + deskMod;
+        int deskDiv = (totalStud + deskMod) / 2;
 
-        System.out.print(totalDesk);
+        System.out.print(deskDiv);
 
         // closing the scanner object
         scanner.close();
