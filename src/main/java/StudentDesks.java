@@ -14,11 +14,13 @@ class StudentDesks {
         /*
          *  your code goes here
          */
-        int totalStud = a + b + c;
-        int deskMod = totalStud % 2;
-        int deskDiv = (totalStud + deskMod) / 2;
+        int classA = ((a % 2) + a) / 2;
+        int classB = ((b % 2) + b) / 2;
+        int classC = ((c % 2) + c) / 2;
 
-        System.out.print(deskDiv);
+        int total = classA + classB + classC;
+
+        System.out.print(total);
 
         // closing the scanner object
         scanner.close();
